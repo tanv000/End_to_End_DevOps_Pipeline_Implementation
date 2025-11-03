@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "vjagvi/college-website"
+        IMAGE_NAME = "website"
         ECR_REPO   = "708972351530.dkr.ecr.ap-south-1.amazonaws.com/website"
         REGION     = "ap-south-1"
         AWS_CLI    = "C:\\Program Files\\Amazon\\AWSCLI\\bin\\aws.exe"
