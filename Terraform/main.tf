@@ -8,6 +8,11 @@ provider "aws" {
 resource "aws_iam_role" "ec2_role" {
   name = "ec2-ecr-access-role"
 
+  lifecycle {
+    prevent_destroy = false
+    ignore_changes = all
+  }
+
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
@@ -131,6 +136,6 @@ resource "aws_instance" "web" {
               EOF
 
   tags = {
-    Name = "CollegeWebsite-EC2"
+    Name = "Website-EC2"
   }
 }
