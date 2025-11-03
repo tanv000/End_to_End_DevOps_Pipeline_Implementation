@@ -126,13 +126,13 @@ resource "aws_instance" "web" {
               docker pull $REPO
 
               # Stop existing container if any
-              if [ $(docker ps -q -f name=college-website) ]; then
-                docker stop college-website
-                docker rm college-website
+              if [ $(docker ps -q -f name= website) ]; then
+                docker stop website
+                docker rm website
               fi
 
               # Run container
-              docker run -d --name college-website -p 80:80 $REPO
+              docker run -d --name website -p 80:80 $REPO
               EOF
 
   tags = {
