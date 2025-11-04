@@ -1,12 +1,12 @@
 # TravelScape – DevOps Pipeline Implementation
 
-## 📘 Overview
+## Overview
 **TravelScape** is a simple static travel blog website deployed through an automated **CI/CD pipeline** built using **Jenkins, Docker, Terraform, and AWS**.  
 It demonstrates continuous integration, delivery, and infrastructure automation for deploying containerized web applications.
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 - **Version Control:** Git & GitHub  
 - **CI/CD Automation:** Jenkins  
 - **Containerization:** Docker  
@@ -15,7 +15,7 @@ It demonstrates continuous integration, delivery, and infrastructure automation 
 
 ---
 
-## 🧩 Workflow
+## Workflow
 1. **Source Code Management** – Website code and automation scripts stored in GitHub.  
 2. **Build Stage** – Jenkins builds a Docker image for the website.  
 3. **Push to ECR (Manual Setup)** –  
@@ -26,7 +26,7 @@ It demonstrates continuous integration, delivery, and infrastructure automation 
 
 ---
 
-## 🧱 Manual ECR Setup (Before Pipeline)
+## Manual ECR Setup (Before Pipeline)
 1. Open **AWS Console → ECR → Create Repository**.  
 2. Name: `website` → Visibility: Private → Create.  
 3. Copy URI (e.g.,  
@@ -37,7 +37,7 @@ It demonstrates continuous integration, delivery, and infrastructure automation 
 
 ---
 
-## 📂 Key Files
+## Key Files
 | File | Purpose |
 |------|----------|
 | `Jenkinsfile` | Defines pipeline: build → push → deploy |
@@ -48,7 +48,7 @@ It demonstrates continuous integration, delivery, and infrastructure automation 
 
 ---
 
-## 🚀 Outcome
+## Outcome
 - Automated deployment of static website to AWS EC2.  
 - Integrated Jenkins, Docker, Terraform, and AWS services.  
 - Demonstrated full DevOps lifecycle — build, test, deploy, and host.  
